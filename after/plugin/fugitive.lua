@@ -11,3 +11,5 @@ vim.keymap.set("n", "<leader>gc", ":Git commit<Enter>")
 vim.keymap.set("n", "<leader>gp", ":Git push<Enter>")
 
 vim.keymap.set("n", "<leader>gao", ":Git remote add origin ")
+
+vim.keymap.set("n", "<leader>gr", ":Git rm ")
