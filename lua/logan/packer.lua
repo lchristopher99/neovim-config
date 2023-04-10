@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
     -- git
     use('tpope/vim-fugitive')
 
+    -- language servers
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
