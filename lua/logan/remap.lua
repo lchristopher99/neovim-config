@@ -1,6 +1,4 @@
--- remap ":Ex" (explore) command to " e"
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
 
 -- remap ":w" (write) command to " w"
 vim.keymap.set("n", "<leader>w", vim.cmd.w)

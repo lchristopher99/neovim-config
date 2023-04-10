@@ -30,6 +30,8 @@ end
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
+vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
+
 require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
       auto_reload_on_write = true,
       disable_netrw = false,
