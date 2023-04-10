@@ -40,6 +40,12 @@ return require('packer').startup(function(use)
     -- git
     use('tpope/vim-fugitive')
 
+    -- status bar
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
     -- language servers
     use {
         'VonHeikemen/lsp-zero.nvim',
