@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
         branch = 'v0.2'
     }
 
+
     -- file explorer
     use {
         'nvim-tree/nvim-tree.lua',
