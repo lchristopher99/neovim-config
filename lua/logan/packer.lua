@@ -16,6 +16,11 @@ return require('packer').startup(function(use)
         branch = 'v0.2'
     }
 
+    -- debugger
+    use 'mfussenegger/nvim-dap'
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use 'theHamsta/nvim-dap-virtual-text'
+
     -- file explorer
     use {
         'nvim-tree/nvim-tree.lua',
