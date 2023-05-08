@@ -43,7 +43,10 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', { run = ":TSUpdate" })
 
     -- git
-    use('tpope/vim-fugitive')
+    use 'tpope/vim-fugitive'
+
+    -- comments
+    use 'tpope/vim-commentary'
 
     -- status bar
     use {
