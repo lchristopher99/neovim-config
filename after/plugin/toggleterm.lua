@@ -3,7 +3,7 @@ require("toggleterm").setup{
 }
 
 -- toggle terminal
-vim.keymap.set("n", "<leader>tt", ":ToggleTerm<CR>")
+vim.keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
 
 -- unfocus terminal
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
