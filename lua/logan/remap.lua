@@ -27,9 +27,3 @@ vim.keymap.set("x", "p", "\"_dP")
 
 -- replace all instances of current text
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
-
--- toggle terminal
-vim.keymap.set("n", "<leader>tt", ":ToggleTerm<CR>")
-
--- unfocus terminal
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
