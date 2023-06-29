@@ -77,11 +77,10 @@ vim.keymap.set('n', '<Leader>db', function()
         prompt = mConfig.name .." - with args: ",
     },
     function(input)
-        if input == nil then
-            return
+        if input ~= nil then
+            local args = vim.split(input, ' ', true)
+            mConfig.args = args
         end
-        local args = vim.split(input, ' ', true)
-        mConfig.args = args
         dap.run(mConfig)
     end)
 end)
