@@ -13,3 +13,7 @@ vim.opt.wrap = false
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+
+vim.opt.mousemoveevent = true
+
+vim.loader.enable()
