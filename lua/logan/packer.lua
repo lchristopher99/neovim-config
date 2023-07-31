@@ -10,9 +10,6 @@ return require('packer').startup(function(use)
     -- AI pair programmer - conflicts with treesitter
     -- use 'Exafunction/codeium.vim'
 
-    -- snazzy tabs
-    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-
     -- edit remote files
     use {
         'chipsenkbeil/distant.nvim',

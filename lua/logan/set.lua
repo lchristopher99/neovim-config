@@ -16,4 +16,7 @@ vim.g.mapleader = " "
 
 vim.opt.mousemoveevent = true
 
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
 vim.loader.enable()
