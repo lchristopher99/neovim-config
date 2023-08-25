@@ -1,21 +1,19 @@
-vim.g.mapleader = " "
-
--- remap ":wa" (write all) command to " wa"
+-- write all
 vim.keymap.set("n", "<leader>wa", vim.cmd.wa)
 
--- remap ":w" (write) command to " w"
+-- write
 vim.keymap.set("n", "<leader>w", vim.cmd.w)
 
--- remap ":q" (quit) command to " q"
+-- quit
 vim.keymap.set("n", "<leader>q", vim.cmd.q)
 
--- remap ":wq" (write & quit) command to " wq"
+-- write & quit
 vim.keymap.set("n", "<leader>wq", vim.cmd.wq)
 
--- remap Ctrl-o (go back) to "gb"
+-- go back
 vim.keymap.set("n", "gb", "<C-o>")
 
--- remap Ctrl-i (go forward) to "gf"
+-- go forward
 vim.keymap.set("n", "gf", "<C-i>")
 
 -- highlight and move regions

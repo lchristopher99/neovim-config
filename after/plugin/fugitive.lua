@@ -24,3 +24,6 @@ vim.keymap.set("n", "<leader>gao", ":Git remote add origin ")
 
 -- git rm file
 vim.keymap.set("n", "<leader>gr", ":Git rm ")
+
+-- git submodule
+vim.keymap.set("n", "<leader>gsm", ":Git submodule ")

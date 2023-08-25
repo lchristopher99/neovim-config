@@ -78,7 +78,7 @@ vim.keymap.set('n', '<Leader>db', function()
     },
     function(input)
         if input ~= nil then
-            local args = vim.split(input, ' ', true)
+            local args = vim.split(input, ' ')
             mConfig.args = args
         end
         dap.run(mConfig)
