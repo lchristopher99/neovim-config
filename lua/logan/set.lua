@@ -1,5 +1,5 @@
 vim.opt.nu = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -16,7 +16,7 @@ vim.g.mapleader = " "
 
 vim.opt.mousemoveevent = true
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.opt.foldmethod = "expr"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 vim.loader.enable()

@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- remap ":wa" (write all) command to " wa"
+vim.keymap.set("n", "<leader>wa", vim.cmd.wa)
+
 -- remap ":w" (write) command to " w"
 vim.keymap.set("n", "<leader>w", vim.cmd.w)
 
@@ -27,3 +30,33 @@ vim.keymap.set("x", "p", "\"_dP")
 
 -- replace all instances of current text
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+
+-- use telescope to find list of patterns
+-- Ctrl-q to add to quick fix list
+-- replace all instances of text in quick fix list and prompt to confirm
+vim.keymap.set("n", "<leader>r", ":cdo %s/OLD/NEW/gc")
+
+-- same as above but does not prompt to confirm
+vim.keymap.set("n", "<leader>ra", ":cdo %s/OLD/NEW/g")
+
+-- split vertical
+vim.keymap.set("n", "<leader>vn", ":vnew<enter>")
+
+-- split horizontal
+vim.keymap.set("n", "<leader>n", ":new<enter>")
+
+-- jump to left window
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-Left>", "<C-w><Left>")
+
+-- jump to right window
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-Right>", "<C-w><Right>")
+
+-- jump to top window
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-Up>", "<C-w><Up>")
+
+-- jump to bottom window
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-Down>", "<C-w><Down>")
