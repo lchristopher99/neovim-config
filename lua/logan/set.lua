@@ -14,10 +14,6 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
-vim.opt.shell = 'pwsh'
-vim.opt.shellcmdflag = '-command'
-vim.opt.shellxquote = ''
-
 vim.opt.mousemoveevent = true
 
 -- vim.opt.foldmethod = "expr"

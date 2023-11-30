@@ -1,7 +1,4 @@
-require("toggleterm").setup
-{
-  shell = "pwsh"
-}
+require("toggleterm").setup()
 
 -- toggle terminal
 vim.keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
