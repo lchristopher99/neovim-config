@@ -14,7 +14,8 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
-vim.opt.shell = 'pwsh'
+-- COMMENT OUT FOR LINUX
+vim.opt.shell = 'zsh'
 vim.opt.shellcmdflag = '-command'
 vim.opt.shellxquote = ''
 

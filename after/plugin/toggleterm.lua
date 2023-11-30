@@ -1,4 +1,5 @@
-require("toggleterm").setup{
+require("toggleterm").setup
+{ -- COMMENT OUT FOR LINUX
   shell = "pwsh"
 }
 
