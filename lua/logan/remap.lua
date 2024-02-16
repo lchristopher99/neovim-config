@@ -58,3 +58,15 @@ vim.keymap.set("n", "<M-Up>", "<C-w><Up>")
 -- jump to bottom window
 vim.keymap.set("n", "<M-j>", "<C-w>j")
 vim.keymap.set("n", "<M-Down>", "<C-w><Down>")
+
+-- make the window bigger horizontally 
+vim.keymap.set("n", "=", [[<cmd>vertical resize +2<cr>]])
+
+-- make the window smaller horizontally
+vim.keymap.set("n", "-", [[<cmd>vertical resize -2<cr>]])
+
+-- make the window bigger vertically by pressing shift and =
+vim.keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]])
+
+-- make the window smaller vertically by pressing shift and -
+vim.keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]])
