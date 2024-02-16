@@ -7,6 +7,12 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
+    }
+
     -- AI pair programmer - conflicts with treesitter
     -- use 'Exafunction/codeium.vim'
 
