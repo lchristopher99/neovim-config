@@ -14,6 +14,10 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
+vim.opt.shell = 'zsh'
+vim.opt.shellcmdflag = '-c'
+vim.opt.shellxquote = ''
+
 vim.opt.mousemoveevent = true
 
 -- vim.opt.foldmethod = "expr"
