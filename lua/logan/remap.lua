@@ -44,20 +44,20 @@ vim.keymap.set("n", "<leader>vn", ":vnew<enter>")
 vim.keymap.set("n", "<leader>n", ":new<enter>")
 
 -- jump to left window
-vim.keymap.set("n", "<M-h>", "<C-w>h")
-vim.keymap.set("n", "<M-Left>", "<C-w><Left>")
+vim.keymap.set("n", "<D-h>", "<C-w>h")
+vim.keymap.set("n", "<D-Left>", "<C-w><Left>")
 
 -- jump to right window
-vim.keymap.set("n", "<M-l>", "<C-w>l")
-vim.keymap.set("n", "<M-Right>", "<C-w><Right>")
+vim.keymap.set("n", "<D-l>", "<C-w>l")
+vim.keymap.set("n", "<D-Right>", "<C-w><Right>")
 
 -- jump to top window
-vim.keymap.set("n", "<M-k>", "<C-w>k")
-vim.keymap.set("n", "<M-Up>", "<C-w><Up>")
+vim.keymap.set("n", "<D-k>", "<C-w>k")
+vim.keymap.set("n", "<D-Up>", "<C-w><Up>")
 
 -- jump to bottom window
-vim.keymap.set("n", "<M-j>", "<C-w>j")
-vim.keymap.set("n", "<M-Down>", "<C-w><Down>")
+vim.keymap.set("n", "<D-j>", "<C-w>j")
+vim.keymap.set("n", "<D-Down>", "<C-w><Down>")
 
 -- make the window bigger horizontally 
 vim.keymap.set("n", "=", [[<cmd>vertical resize +2<cr>]])

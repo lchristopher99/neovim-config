@@ -87,7 +87,7 @@ end)
 
 dap.adapters.coreclr = {
   type = 'executable',
-  command = 'C:/Program Files/netcoredbg/netcoredbg.exe',
+  command = '/home/kali/netcoredbg/netcoredbg',
   args = {'--interpreter=vscode'}
 }
 
@@ -99,7 +99,7 @@ dap.configurations.cs = {
     args = { },
     program = function()
         return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file')
-    end,
+    end
   },
 }
 
@@ -176,5 +176,16 @@ require("dapui").setup({
         max_value_lines = 100
     }
 })
+
+local dapui = require("dapui")
+dap.listeners.after.event_initialized["dapui_config"]=function()
+  dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"]=function()
+  dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"]=function()
+  dapui.close()
+end
 
 require("nvim-dap-virtual-text").setup()
