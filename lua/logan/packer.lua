@@ -16,12 +16,6 @@ return require('packer').startup(function(use)
     -- AI pair programmer - conflicts with treesitter
     -- use 'Exafunction/codeium.vim'
 
-    -- edit remote files
-    use {
-        'chipsenkbeil/distant.nvim',
-        branch = 'v0.2'
-    }
-
     -- debugger
     use { "mfussenegger/nvim-dap", requires = {"nvim-neotest/nvim-nio"} }
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
@@ -62,9 +56,6 @@ return require('packer').startup(function(use)
 
     -- terminal
     use { "akinsho/toggleterm.nvim", tag = '*' }
-
-    -- smooth scroll
-    use 'karb94/neoscroll.nvim'
 
     -- language servers
     use {
